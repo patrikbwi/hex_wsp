@@ -1,0 +1,12 @@
+{application, hex_wsp,
+ [
+  {description, "Wsp plugin for HEX"},
+  {vsn, git},
+  {registered, [hex_wsp_server]},
+  {applications, [
+                  kernel,
+                  stdlib,
+		  wsp
+		  ]},
+  {mod, { hex_wsp_app, []}}
+ ]}.
